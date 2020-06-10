@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(222, 184, 135, 0.7);
+    overflow-x: hidden;
+}
+
+#game-area {
+    height: 600px;
+    width: 600px;
+    border: 4px groove;
+    border-radius: 10%;
+    margin-left: 360px;
+}
+
+#static-bar {
+    width: 500px;
+    height: 50px;
+    background-color:  transparent;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+#static-bar > div, .stopped-bar > div, #moving-bar > div {
+    width: 100px;
+    margin-left: 1px;
+    background-color: burlywood;
+    border: 1px solid chocolate;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#moving-bar {
+    width: 400px;
+    height: 50px;
+    background-color:  transparent;
+    display: flex;
+}
+
+.stopped-bar {
+    width: 400px;
+    height: 50px;
+    background-color:  transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+}
+
+#start-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20%;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: oblique;
+    color: black;
+    background-color: rgba(137, 43, 226, 0.1);
+    margin: 30% 0 0 34%;
+}
+
+#score-board {
+    width: auto;
+    height: 100px;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 68%;
+    }
+}
+
+#end-sign {
+    width: 40px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+#flag {
+    position: relative;
+    width: 0; 
+    height: 0; 
+    left: 50%;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid gold;
+    z-index: 1;
+}
+
+#flag-bar {
+    position: relative;
+    width: 6px;
+    height: 50px;
+    left: 50%;
+    background-color: chocolate;
+    top: -10px;
+}
