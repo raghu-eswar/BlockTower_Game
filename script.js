@@ -75,7 +75,7 @@ function start() {
     numberStones = (previousBarWidth > 100)? previousBarWidth/72 : 1;      
 
     for( var i = 1; i<=numberStones; i++) {
-        var transform = (i%2 == 0)? "rotateZ(-1deg)": "rotateZ(1deg)";
+        var transform = (i%2 == 0)? "rotateZ(-1.5deg)": "rotateZ(1.5deg)";
         var stone = document.createElement("div");
         stone.style.transform = transform;
         movingBar.appendChild(stone);
