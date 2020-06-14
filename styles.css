@@ -17,7 +17,7 @@ body {
 #static-bar {
     width: 500px;
     height: 50px;
-    background-color:  burlywood;
+    background-color: burlywood;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -25,7 +25,9 @@ body {
     display: flex;
 }
 
-#static-bar > div, .stopped-bar > div, #moving-bar > div {
+#static-bar>div,
+.stopped-bar>div,
+#moving-bar>div {
     width: 100px;
     margin-left: 1px;
     background-color: burlywood;
@@ -37,14 +39,14 @@ body {
 #moving-bar {
     width: 400px;
     height: 50px;
-    background-color:  burlywood;
+    background-color: burlywood;
     display: flex;
 }
 
 .stopped-bar {
     width: 400px;
     height: 50px;
-    background-color:  burlywood;
+    background-color: burlywood;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -82,13 +84,13 @@ body {
     height: 100px;
     position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%);
 }
 
 #flag {
     position: relative;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     left: 50%;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
