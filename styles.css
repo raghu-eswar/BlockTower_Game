@@ -61,7 +61,8 @@ body {
     font-weight: 700;
     font-style: oblique;
     color: black;
-    background-color: rgba(137, 43, 226, 0.1);
+    background-color: transparent;
+    outline: none;
     margin: 30% 0 0 34%;
 }
 
